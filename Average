@@ -1,0 +1,22 @@
+importava.util.Scanner;
+class ProgramTest {
+    public static void main(String[] args) {
+        String answer = "";
+
+        do {
+
+            int num, count = 0;
+            Scanner scan = new Scanner(System. in );
+            System.out.print("Enter any number : ");
+            num = scan.nextInt();
+
+            if ((num % 2) == 0) System.out.println(num + " is an even number.");
+            else System.out.println(num + " is an odd number");
+            System.out.println("do you want to continue?");
+            answer = scan.next();
+            count++;
+
+        } while (answer.equals("y"));
+
+    }
+}
